@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -8,14 +9,157 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>Jessica Gibbins</title>
   </head>
+
   <body>
-    <h1>Hello, world!</h1>
+    
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">Portfolio</a>
+            <a class="nav-item nav-link" href="#">Skills</a>
+            <a class="nav-item nav-link" href="#">Contact</a>
+        </div>
+    </nav>
+
+    <header class="container">
+        <!--<div class="row align-items-start">
+            <div class="col">
+                <img src='images/undraw_dev_focus_b9xo (1).svg' alt='Developer Illustration' class="img-fluid">
+            </div>-->
+            <div class="header-text">
+                <h1 class="mx-auto">Jessica Gibbins</h1>
+                <p>Web Developer based in South Florida</p>
+            </div>
+    </header>
+
+    <section class="skills container">
+        <div class="row">
+            <h2 class="mx-auto">Skills</h2>
+        </div>
+        <div class="skills-icons row">
+            <div class="col">
+                <img src='images/iconfinder_html5_294678.svg' alt='HTML5 Icon' class="img-fluid">
+            </div>
+            <div class="col">
+                <img src='images/iconfinder_css3_294692.svg' alt='CSS Icon' class="img-fluid">
+            </div>
+            <div class="col">
+                <img src='images/Javascript-shield.svg' alt='JavaScript Icon' class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio container">
+        <div class="row">
+            <h2 class="mx-auto">Projects</h2>
+        </div>
+        <div class="projects card-group">
+            <div class="card" style="width: 18rem;">
+                <div class="card-photo">
+                    <img src="images/projects/photogallery_project.png" class="card-img-top" alt="Project Image">
+                    <button class="card-btn">
+                        <a href="https://github.com/Jessgibbins/Techdegree-Project-5" target="_blank">View Code</a>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-text">Interactive Photo Gallery</h5>
+                    <p class="card-text">Used HTML, CSS and JavaScript to create an interactive, searchable gallery of photos.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-photo">
+                    <img src="images/projects/wordgame_project.png" class="card-img-top" alt="Project Image">
+                    <button class="card-btn">
+                        <a href="https://github.com/Jessgibbins/Techdegree-Project-6" target="_blank">View Code</a>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-text">Game Show App</h5>
+                    <p class="card-text">Created a word guessing game and used Javascript to generate random phrases that players try to guess by entering different letters into the program.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-photo">
+                    <img src="images/projects/webapp_project.png" class="card-img-top" alt="Project Image">
+                    <button class="card-btn">
+                        <a href="https://github.com/Jessgibbins/Techdegree-Project-7" target="_blank">View Code</a>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-text">WebApp Dashboard</h5>
+                    <p class="card-text">Built an interactive dashboard for a web application using SVG graphics and JavaScript programming.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-photo">
+                    <img src="images/projects/api_project.png" class="card-img-top" alt="Project Image">
+                    <button class="card-btn">
+                        <a href="https://github.com/Jessgibbins/Techdegree-Project-8" target="_blank">View Code</a>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-text">Employee Directory</h5>
+                    <p class="card-text">Used JavaScript to create an employee directory by communicating with a third-party API</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact container">
+        <div class="row">
+            <h2 class="mx-auto">Contact Me</h2>
+        </div>
+        <form class="contact-form">
+            <div class="form-row">
+                <div class="col">
+                <input type="text" class="form-control" placeholder="First name">
+                </div>
+                <div class="col">
+                <input type="text" class="form-control" placeholder="Last name">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col">
+                <input type="text" class="form-control" placeholder="Email address">
+                </div>
+                <div class="col">
+                <input type="text" class="form-control" placeholder="Phone number">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Type message here..."></textarea>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
+
+    <footer class="navbar bottom navbar-light">
+        <div class="row social-icons">
+            <div class="col">
+                <img src='images/iconfinder_linkedin_386655.svg' alt='HTML5 Icon' class="img-fluid">
+            </div>
+            <div class="col">
+                <img src='images/iconfinder_mark-github_298822.svg' alt='CSS Icon' class="img-fluid">
+            </div>
+            <div class="col">
+                <img src='images/iconfinder_3_social_2609563.svg' alt='JavaScript Icon' class="img-fluid">
+            </div>
+        </div>
+            <p class="footer-text">Jessica Gibbins 2019</p>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>

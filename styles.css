@@ -1,0 +1,137 @@
+
+a:link,
+a:visited {
+    color: #546A7B;
+}
+
+a:hover,
+a:active {
+    color: #E39695;
+}
+
+header {
+    height: 200px;
+    background: linear-gradient(rgba(158, 163, 176, 0.4), rgba(0, 0, 0, 0.4)), url('images/undraw_dev_focus_b9xo\ \(1\).svg'), no-repeat top center;
+    background-size: contain;                      
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header-text {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+
+footer,
+.portfolio {
+    background: rgba(158, 163, 176, 0.295);
+}
+
+.skills-icons {
+    padding: 0.5rem;
+}
+
+.projects,
+.contact-form,
+.contact,
+.btn-primary {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+h2 {
+    padding: 0.5rem;
+    color: #E39695;
+    border-bottom: 2px solid #546A7B;
+}
+
+.footer-text {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0;
+    font-size: 0.75rem;
+}
+
+.social-icons img {
+    height: 1.5rem;
+}
+
+footer {
+    padding: 0;
+}
+
+.navbar.bottom {
+    justify-content: center;
+}
+
+.social-icons {
+    padding: 0.25rem;
+    
+}
+
+.card-text {
+    text-align: center;
+}
+
+.card p {
+    color: #546A7B;
+}
+
+.form-row {
+    padding: 0.25rem 0 0.25rem 0;
+}
+
+.form-control:focus {
+    border: #E9FAE3;
+    box-shadow:  0 0 0 0.2rem rgba(84, 106, 123, 0.25);
+}
+
+.btn-primary {
+    background-color: #E39695;;
+    color: white;
+    border: none;
+    margin-top: 0.25rem;
+}
+
+.card-photo {
+    background-color: #E39695;
+}
+
+.card-photo:hover img {
+    opacity: 0.2;
+}
+
+.card-btn {
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #546A7B;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.card-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.card-btn:focus {
+    outline: none;
+    border: 2px solid #E9FAE3;
+}
+  
+img:hover + .card-btn, 
+.card-btn:hover {
+    display: inline-block;
+}
