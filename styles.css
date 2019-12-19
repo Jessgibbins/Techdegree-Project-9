@@ -128,7 +128,7 @@ img:hover + .card-btn,
     width: 100%
 }
 
-#myBtn {
+.myBtn {
     background-color: #546A7B;
     color: white;
 }
