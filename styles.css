@@ -1,3 +1,4 @@
+/* ---------- Main Styles ---------- */
 
 a:link,
 a:visited {
@@ -8,6 +9,30 @@ a:hover,
 a:active {
     color: #E39695;
 }
+
+footer,
+.portfolio {
+    background: rgba(158, 163, 176, 0.295);
+}
+
+.projects,
+.contact-form,
+.contact,
+.btn-primary {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+h2 {
+    padding: 0.5rem;
+    color: #E39695;
+    border-bottom: 2px solid #546A7B;
+}
+
+
+/* ---------- Navigation ---------- */
+
+/* ---------- Header ---------- */
 
 header {
     height: 200px;
@@ -29,55 +54,13 @@ header {
     color: white;
 }
 
-footer,
-.portfolio {
-    background: rgba(158, 163, 176, 0.295);
-}
-
-.portfolio .card {
-    margin-bottom: 1rem;
-}
+/* ---------- Skills Section ---------- */
 
 .skills-icons {
     padding: 0.5rem;
 }
 
-.projects,
-.contact-form,
-.contact,
-.btn-primary {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-}
-
-h2 {
-    padding: 0.5rem;
-    color: #E39695;
-    border-bottom: 2px solid #546A7B;
-}
-
-.footer-text {
-    text-align: center;
-    width: 100%;
-    margin-bottom: 0;
-    font-size: 0.75rem;
-}
-
-.social-icons img {
-    height: 1.5rem;
-}
-
-footer {
-    padding: 0;
-}
-
-.navbar.bottom {
-    justify-content: center;
-}
-
-.social-icons {
-    padding: 0.25rem;
-}
+/* ---------- Portfolio ---------- */
 
 .card-text {
     text-align: center;
@@ -86,22 +69,6 @@ footer {
 .card p {
     color: #546A7B;
     display: inline-block;
-}
-
-.form-row {
-    padding: 0.25rem 0 0.25rem 0;
-}
-
-.form-control:focus {
-    border: #E9FAE3;
-    box-shadow:  0 0 0 0.2rem rgba(84, 106, 123, 0.25);
-}
-
-.btn-primary {
-    background-color: #E39695;;
-    color: white;
-    border: none;
-    margin-top: 0.25rem;
 }
 
 .card-photo {
@@ -142,6 +109,8 @@ img:hover + .card-btn,
 .card-btn:hover {
     display: inline-block;
 }
+
+/* ----- Modals ----- */
 
 .modal-hover {
     display: none;
@@ -185,8 +154,6 @@ img:hover + .modal-hover,
     padding: 1rem;
 }
 
-
-
 .modal-footer {
     background-color: #f9f9f9;
     text-align: center;
@@ -200,6 +167,51 @@ img:hover + .modal-hover,
 .modal-header {
     display: inline-block;
 }
+
+/* ---------- Contact Form ---------- */
+
+.form-row {
+    padding: 0.25rem 0 0.25rem 0;
+}
+
+.form-control:focus {
+    border: #E9FAE3;
+    box-shadow:  0 0 0 0.2rem rgba(84, 106, 123, 0.25);
+}
+
+.btn-primary {
+    background-color: #E39695;;
+    color: white;
+    border: none;
+    margin-top: 0.25rem;
+}
+
+/* ---------- Footer ---------- */
+
+.footer-text {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0;
+    font-size: 0.75rem;
+}
+
+.social-icons img {
+    height: 1.5rem;
+}
+
+footer {
+    padding: 0;
+}
+
+.navbar.bottom {
+    justify-content: center;
+}
+
+.social-icons {
+    padding: 0.25rem;
+}
+
+/* ---------- Media Queries ---------- */
 
 @media screen and (min-width: 480px) {
     .card-btn {
@@ -228,11 +240,7 @@ img:hover + .modal-hover,
         text-align: center;
     }
 
-    .portfolio .card {
-        height: 100%;
-    }
-
-    .col-sm-6 {
+    .col-md-6 {
         margin-top: 15px;
         margin-bottom: 15px;
     }
@@ -252,10 +260,6 @@ img:hover + .modal-hover,
     }
 }
 
-@media screen and (min-width: 768px) {
-
-}
-
 @media screen and (min-width: 992px) {
 
     .header {
@@ -266,20 +270,21 @@ img:hover + .modal-hover,
 
     .header-img {
         display: inline;
-        margin-top: 1rem;
+        padding: 2rem 0 2rem 5rem;
+        text-align: right;
     }
 
     .header-img img {
-        max-width:100%;
-        max-height:100%;
+        max-width: -webkit-fill-available;
+        max-height: -webkit-fill-available;
         float: left;
-        margin-left: 10%;
     }
 
     .header-text {
         color: #546A7B;
-        float: right;
-        margin-right: 25%;
+        height: fit-content;
+        text-align: left;
+        padding-top: 2rem;
     }
 
     .skills-icons {
@@ -322,4 +327,15 @@ img:hover + .modal-hover,
 
 @media screen and (min-width: 1200px) {
 
+    .header h1 {
+        font-size: 3rem;
+    }
+
+    .header p {
+        font-size: 1.5rem;
+    }
+
+    .header-text {
+        padding-top: 1.5rem;
+    }
 }

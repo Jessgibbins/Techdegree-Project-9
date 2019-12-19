@@ -20,14 +20,14 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">Portfolio</a>
-            <a class="nav-item nav-link" href="#">Skills</a>
-            <a class="nav-item nav-link" href="#">Contact</a>
+            <a class="nav-item nav-link active" href="#header">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#skills">Skills</a>
+            <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-item nav-link" href="#contact">Contact</a>
         </div>
     </nav>
 
-    <header class="container header">
+    <header class="container header" id="header">
         <div class="row">
             <div class="col header-img">
                 <img src='images/undraw_dev_focus_b9xo (1).svg' alt='Developer Illustration' class="img-fluid">
@@ -39,7 +39,7 @@
         </div>
     </header>
 
-    <section class="skills container">
+    <section class="skills container" id="skills">
         <div class="row">
             <h2 class="mx-auto">Skills</h2>
         </div>
@@ -56,12 +56,12 @@
         </div>
     </section>
 
-    <section class="portfolio container">
+    <section class="portfolio container" id="portfolio">
         <div class="row">
             <h2 class="mx-auto">Projects</h2>
         </div>
         <div class="projects card-group">
-            <div class="col-sm-6">
+            <div class="col-md-6">
             <div class="card">
                 <div class="card-photo">
                     <img src="images/projects/photogallery_project.png" class="card-img-top" alt="Project Image">
@@ -86,7 +86,7 @@
                                 <p>Used HTML, CSS and JavaScript to create an interactive, searchable gallery of photos.</p>
                             </div>
                             <div class="modal-footer">
-                                <a href="#">
+                                <a href="https://github.com/Jessgibbins/Techdegree-Project-5" target="_blank">
                                 <img src="images/iconfinder_mark-github_298822.svg">
                                 <p>View Code on Github</p></a>
                             </div>
@@ -96,18 +96,19 @@
                 </div> 
             </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-md-6">
             <div class="card">
                 <div class="card-photo">
                     <img src="images/projects/wordgame_project.png" class="card-img-top" alt="Project Image">
                     
+                    <!-- Modal -->
+
                     <div class="modal-hover">
                         <h6>Word Guessing Game</h6>
                         <!-- Trigger the modal with a button -->
                         <button type="button" class="btn btn-default myBtn2" id="myBtn">Learn More</button>
                     </div>
 
-                    <!-- Modal -->
                     <div class="modal fade myModal2" id="myModal" role="dialog">
                         <div class="modal-dialog">
                         
@@ -121,7 +122,9 @@
                                 <p>Created a word guessing game and used Javascript to generate random phrases that players try to guess.</p>
                             </div>
                             <div class="modal-footer">
-                            <p>View Code on Github</p><a href="https://github.com/Jessgibbins/Techdegree-Project-6" target="_blank"><img src="images/iconfinder_mark-github_298822.svg" ></a>
+                                <a href="https://github.com/Jessgibbins/Techdegree-Project-6" target="_blank">
+                                <img src="images/iconfinder_mark-github_298822.svg">
+                                <p>View Code on Github</p></a>
                             </div>
                         </div>
                     </div>
@@ -129,7 +132,7 @@
                 </div>
             </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-md-6">
             <div class="card">
                 <div class="card-photo">
                     <img src="images/projects/webapp_project.png" class="card-img-top" alt="Project Image">
@@ -142,7 +145,6 @@
                         <button type="button" class="btn btn-default myBtn3" id="myBtn">Learn More</button>
                     </div>
 
-                    <!-- Modal -->
                     <div class="modal fade myModal3" id="myModal" role="dialog">
                         <div class="modal-dialog">
                         
@@ -157,9 +159,8 @@
                             </div>
                             <div class="modal-footer">
                                 <a href="https://github.com/Jessgibbins/Techdegree-Project-8" target="_blank">
-                                    <img src="images/iconfinder_mark-github_298822.svg">
-                                    <p>View Code on Github</p>
-                                </a>
+                                <img src="images/iconfinder_mark-github_298822.svg">
+                                <p>View Code on Github</p></a>
                             </div>
                         </div>
                     </div>
@@ -167,17 +168,19 @@
                 </div>
             </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-md-6">
             <div class="card">
                 <div class="card-photo">
                     <img src="images/projects/api_project.png" class="card-img-top" alt="Project Image">
+
+                    <!-- Modal -->
+
                     <div class="modal-hover">
                         <h6>Employee Directory</h6>
                         <!-- Trigger the modal with a button -->
                         <button type="button" class="btn btn-default myBtn4" id="myBtn">Learn More</button>
                     </div>
 
-                    <!-- Modal -->
                     <div class="modal fade myModal4" id="myModal" role="dialog">
                         <div class="modal-dialog">
                         
@@ -191,7 +194,9 @@
                                 <p>Used JavaScript to create an employee directory by communicating with a third-party API</p>
                             </div>
                             <div class="modal-footer">
-                            <p>View Code on Github</p><a href="https://github.com/Jessgibbins/Techdegree-Project-8"><img src="images/iconfinder_mark-github_298822.svg" ></a>
+                                <a href="https://github.com/Jessgibbins/Techdegree-Project-8">
+                                <img src="images/iconfinder_mark-github_298822.svg">
+                                <p>View Code on Github</p></a>
                             </div>
                         </div>
                     </div>
@@ -202,7 +207,7 @@
         </div>
     </section>
 
-    <section class="contact container">
+    <section class="contact container" id="contact">
         <div class="row">
             <h2 class="mx-auto">Contact Me</h2>
         </div>
@@ -225,7 +230,7 @@
             </div>
             <div class="form-row">
                 <div class="col">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Type message here..."></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Type message here..." required></textarea>
                 </div>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
@@ -235,13 +240,18 @@
     <footer class="navbar bottom navbar-light">
         <div class="row social-icons">
             <div class="col">
+                <a href="#">
                 <img src='images/iconfinder_linkedin_386655.svg' alt='HTML5 Icon' class="img-fluid">
+                </a>
             </div>
             <div class="col">
+                <a href="https://github.com/Jessgibbins" target="_blank">
                 <img src='images/iconfinder_mark-github_298822.svg' alt='CSS Icon' class="img-fluid">
             </div>
             <div class="col">
+                <a href=#>
                 <img src='images/iconfinder_3_social_2609563.svg' alt='JavaScript Icon' class="img-fluid">
+                </a>
             </div>
         </div>
             <p class="footer-text">Jessica Gibbins 2019</p>
