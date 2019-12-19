@@ -17,10 +17,14 @@ header {
     background-position: center center;
 }
 
+.header-img {
+    display: none;
+}
+
 .header-text {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    /*position: relative;
+    top: 50%;*/
+    transform: translateY(50%);
     text-align: center;
     color: white;
 }
@@ -28,6 +32,10 @@ header {
 footer,
 .portfolio {
     background: rgba(158, 163, 176, 0.295);
+}
+
+.portfolio .card {
+    margin-bottom: 1rem;
 }
 
 .skills-icons {
@@ -69,7 +77,6 @@ footer {
 
 .social-icons {
     padding: 0.25rem;
-    
 }
 
 .card-text {
@@ -78,6 +85,7 @@ footer {
 
 .card p {
     color: #546A7B;
+    display: inline-block;
 }
 
 .form-row {
@@ -109,12 +117,11 @@ footer {
     position: absolute;
     top: 25%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
     -ms-transform: translate(-50%, -50%);
     background-color: #546A7B;
     color: white;
     font-size: 16px;
-    padding: 12px 24px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
@@ -134,4 +141,185 @@ footer {
 img:hover + .card-btn, 
 .card-btn:hover {
     display: inline-block;
+}
+
+.modal-hover {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%
+}
+
+#myBtn {
+    background-color: #546A7B;
+    color: white;
+}
+
+.modal-footer img {
+    height: 1.5rem;
+    padding-right: 0.2rem;
+}
+
+img:hover + .modal-hover,
+.modal-hover:hover {
+    display: inline-block;
+}
+
+.modal-header, h4, .close {
+    background-color: #E39695;
+    color:white !important;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.modal-header h4 {
+    padding: 1rem;
+}
+
+
+
+.modal-footer {
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.modal-header .close {
+    margin: -1rem;
+}
+
+.modal-footer,
+.modal-header {
+    display: inline-block;
+}
+
+@media screen and (min-width: 480px) {
+    .card-btn {
+        top: 35%;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .skills,
+    .portfolio,
+    .contact {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .skills img {
+        height: 5rem;
+    }
+
+    .skills-icons {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .portfolio .card {
+        height: 100%;
+    }
+
+    .col-sm-6 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .card-btn {
+        top: 25%;
+        padding: 1rem;
+    }
+
+    .card-body {
+        padding: 0.80rem;
+    }
+
+    .contact {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 992px) {
+
+    .header {
+        background: none;
+        background: rgba(158, 163, 176, 0.295);
+        height: 20vh;
+    }
+
+    .header-img {
+        display: inline;
+        margin-top: 1rem;
+    }
+
+    .header-img img {
+        max-width:100%;
+        max-height:100%;
+        float: left;
+        margin-left: 10%;
+    }
+
+    .header-text {
+        color: #546A7B;
+        float: right;
+        margin-right: 25%;
+    }
+
+    .skills-icons {
+        padding-left: 15rem;
+        padding-right: 15rem;
+    }
+
+    .card-body {
+        display: none;
+    }
+
+    .card-photo,
+    .card-img-top {
+        height: 100%;
+    }
+
+    .contact {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .form-row {
+        margin: 1rem;
+    }
+
+    .btn-primary {
+        margin-left: 1.2rem;
+        width: 10rem;
+    }
+
+    .social-icons img {
+        height: 2.2rem;
+        margin: 0.5rem;
+    }
+
+    .footer-text {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
 }
