@@ -150,10 +150,6 @@ img:hover + .modal-hover,
     font-size: 1.2rem;
 }
 
-.modal-header h4 {
-    padding: 1rem;
-}
-
 .modal-footer {
     background-color: #f9f9f9;
     text-align: center;
@@ -333,9 +329,5 @@ footer {
 
     .header p {
         font-size: 1.5rem;
-    }
-
-    .header-text {
-        padding-top: 1.5rem;
     }
 }
